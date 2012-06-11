@@ -17,17 +17,32 @@ In Short ...
 
    </span>
 
+.. This presentation is based on Bill Noble's "A quick guide to organizing
+.. computational biology projects". 
+
+.. Bioinformatics courseworks, as many other scientific courseworks focus on
+.. algorithms or bioinformatics software. Unfortunately, these course fail to
+.. prepare students for day to day organizational challenges in a research
+.. carreer. In this talk, I will present Bill Noble's strategy, some of Greg
+.. Wilson's software carpentry tips, and Buckheit and Donoho's experience
+.. concerning data management and experiments organizations 
+
+.. Poor organization and poor software practices lead to significantly slower
+   research progress. I will start by quoting extracts of Buckheit's and
+   Donoho's paper on reproducible science, to underline the importance of good
+   practices.
+
 ----
 
 The Stolen Briefcase
 --------------------------------------------------------------------------------
 
   "Once, several years ago, at a conference, one of us had a briefcase stolen.
-  The briefcase contained originals figure which had been developped while an
+  The briefcase contained originals figure which had been developed while an
   employee of a large commercial seismic exploration outfit. [..] A manuscript
   had already been written. The figures were so convincing and pivotal [..] that
   without them, the manuscript made no sense. **The manuscript had to be
-  abandonned.**"
+  abandoned.**"
 
 ----
 
