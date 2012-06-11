@@ -6,9 +6,16 @@ A Quick Guide to Organizing Computational (Biology) Projects
 In Short ...
 --------------------------------------------------------------------------------
 
-Poor organizational choices lead to significantly slower research progress
+.. raw:: html
 
-Make your research reproducable
+  <span class="big">
+
+- Poor organizational choices lead to significantly slower research progress
+- Make your research reproducable
+
+.. raw:: html
+
+   </span>
 
 ----
 
@@ -217,8 +224,9 @@ Carrying out a Single Experiment
 Experiments
 ------------
 
-- record everything you do
-- in practice, create a README
+- record all operations you do, in order to make those operations transparents
+  and reproducable.
+- in practice, create a README, in which you store every command line you use
 
 ----
 
