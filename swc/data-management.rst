@@ -169,6 +169,8 @@ Metadata
 - when was it generate?
 - what were the experiment conditions?
 
+.. image:: ./images/data.gif
+
 ----
 
 Project organisation
@@ -179,23 +181,41 @@ Project organisation
 
 ----
 
-
 The lab notebook
 --------------------------------------------------
 
 ----
 
+What is it?
+--------------------------------------------------------------------------------
+
+  "A laboratory notebook (colloq. lab notebook) is a primary record of research.
+  Researchers use a lab notebook to document their hypotheses, experiments and
+  initial analysis or interpretation of these experiments. The notebook serves
+  as an organizational tool, a memory aid, and can also have a role in
+  protecting any intellectual property that comes from the research."
+
+      -- Wikipedia
+
+----
+
+The notebook
+--------------------------------------------------------------------------------
 
 - entries should be dated
 - verbose, links or embedded images, tables
 - results of all the experiments performed
+
 
 ----
 
 Carrying out a Single Experiment
 --------------------------------------------------
 
---------
+----
+
+Experiments
+------------
 
 - record everything you do
 - in practice, create a README
@@ -253,6 +273,9 @@ Command line vs script vs program
 
 ----
 
+Software engineering
+--------------------------------------------------------------------------------
+
 .. image:: ./images/good_code.png
    :scale: 70%
 
@@ -265,3 +288,8 @@ Command line vs script vs program
 - Single use script
 - Project specific script
 - Multi project script
+
+----
+
+Thanks for your attention
+--------------------------------------------------------------------------------
