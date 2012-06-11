@@ -530,11 +530,10 @@ span.important p{
 }
 
 span.big p{
-  text-shadow: rgba(0, 0, 0, 0.4) 0 3px 7px;
-  font-size: 60px;
+  font-size: 40px;
   height: 900px;
   line-height: 100%;
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: center;
   vertical-align: middle;
   width: 800px;
