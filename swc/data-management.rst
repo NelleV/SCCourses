@@ -61,7 +61,7 @@ A year is time long in this business
 
   "When he went back to the old software library [..], **he couldn't remember
   how the software worked** - invocation of sequences, data structures, etc. in
-  the end, he abandonned the project, saying he just didn't have time to get
+  the end, he abandoned the project, saying he just didn't have time to get
   into it anymore."
 
 ----
