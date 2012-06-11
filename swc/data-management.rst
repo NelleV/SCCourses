@@ -150,6 +150,34 @@ A (possible) solution
 
 ----
 
+Still missing something...
+--------------------------------------------------------------------------------
+
+- We give the project to a collaborator
+- A new student joins the project
+- 3 years later, haven't we forgotten the details of the projects?
+
+
+We need **context**. We need **metadata**.
+
+----
+
+Metadata
+--------------------------------------------------------------------------------
+
+- who is the data from?
+- when was it generate?
+- what were the experiment conditions?
+
+----
+
+Project organisation
+--------------------------------------------------------------------------------
+
+.. image:: ./images/project_organization.png
+  :scale: 60%
+
+----
 
 
 The lab notebook
@@ -191,16 +219,22 @@ Handling and preventing errors
 
 ----
 
+Bugs...
+--------------------------------------------------------------------------------
+
 .. raw:: html
 
-     <span class="big">
-
+  <span class="big">
 
 You **will** introduce errors into your code
 
 .. raw:: html
 
-    </span>
+   </span>
+
+.. image:: ./images/bug.png
+
+
 
 -----
 
