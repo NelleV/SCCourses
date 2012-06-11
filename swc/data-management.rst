@@ -10,8 +10,8 @@ In Short ...
 
   <span class="big">
 
-- Poor organizational choices lead to significantly slower research progress
-- Make your research reproducable
+- Poor organizational choices lead to significantly slower research progress.
+- It is critical to make your results reproducable.
 
 .. raw:: html
 
