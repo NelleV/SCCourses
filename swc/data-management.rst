@@ -11,7 +11,7 @@ In Short ...
   <span class="big">
 
 - Poor organizational choices lead to significantly slower research progress.
-- It is critical to make your results reproducable.
+- It is critical to make your results reproducible.
 
 .. raw:: html
 
@@ -46,7 +46,7 @@ The Stolen Briefcase
 
 ----
 
-Who's one First?
+Who's on First?
 --------------------------------------------------------------------------------
 
   "A Graduate Student comes into a Professor's office and says, "That idea you
