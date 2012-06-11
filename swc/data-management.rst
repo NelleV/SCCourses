@@ -292,10 +292,21 @@ Software engineering
 4 types of script
 --------------------------------------------------------------------------------
 
-- Driver script
-- Single use script
-- Project specific script
-- Multi project script
+- Driver script:
+- Single use script: data format conversion
+- Project specific script: contains a generic functionality used by multiple
+  experiments
+- Multi projects script: functionnalities used across many projects (ROC
+  curve, n-fold cross validation, etc).
+
+----
+
+The Value of Version Control
+--------------------------------------------------------------------------------
+
+----
+
+.. image:: images/stolen_briefcase.png
 
 ----
 
