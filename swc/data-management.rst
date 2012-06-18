@@ -128,7 +128,7 @@ So far, so good...
 --------------------------------------------------------------------------------
 
 .. image:: ./images/01_files.png
-  :scale: 60%
+  :width: 750px
 
 ----
 
@@ -136,7 +136,7 @@ Now what ?
 --------------------------------------------------------------------------------
 
 .. image:: ./images/02_files.png
-  :scale: 60%
+  :width: 750px
 
 ----
 
@@ -144,7 +144,7 @@ I guess this is alright
 --------------------------------------------------------------------------------
 
 .. image:: ./images/03_files.png
-  :scale: 60%
+  :width: 750px
 
 ----
 
@@ -152,7 +152,7 @@ Which one is the most recent?
 --------------------------------------------------------------------------------
 
 .. image:: ./images/04_files.png
-  :scale: 60%
+  :width: 750px
 
 ----
 
@@ -160,7 +160,15 @@ Another (bad) common approach
 --------------------------------------------------------------------------------
 
 .. image:: ./images/another_common_approach.png
-  :scale: 60%
+   :width: 750px
+
+----
+
+A story told by filenames
+--------------------------------------------------------------------------------
+
+
+.. image:: ./images/version_control.gif
 
 ----
 
@@ -168,7 +176,7 @@ A (possible) solution
 --------------------------------------------------------------------------------
 
 .. image:: ./images/correct_.png
-  :scale: 60%
+   :width: 750px
 
 ----
 
@@ -178,7 +186,6 @@ Still missing something...
 - We give the project to a collaborator
 - A new student joins the project
 - 3 years later, haven't we forgotten the details of the projects?
-
 
 We need **context**. We need **metadata**.
 
@@ -192,6 +199,7 @@ Metadata
 - what were the experiment conditions?
 
 .. image:: ./images/data.gif
+   :width: 350px
 
 ----
 
@@ -199,7 +207,7 @@ Project organisation
 --------------------------------------------------------------------------------
 
 .. image:: ./images/project_organization.png
-  :scale: 60%
+   :width: 750px
 
 ----
 
@@ -300,7 +308,7 @@ Software engineering
 --------------------------------------------------------------------------------
 
 .. image:: ./images/good_code.png
-   :scale: 70%
+   :width: 350px
 
 ----
 
