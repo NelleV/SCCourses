@@ -141,28 +141,78 @@ Exercices
 
 ----
 
-Cancelling
+Deleting and moving files
 ================================================================================
-- git reset
-- git checkout
+
+- ``git rm``: Removes files from the working tree::
+      ``git rm FILENAME``
+
+- ``git mv``: Move or rename a file or a directory::
+      ``git mv FILENAME TARGET``
 
 ----
+
+Cancelling operations
+================================================================================
+
+- ``git reset HEAD``: unstages filename::
+    ``git reset HEAD filename``
+
+- ``git checkout``: unmodifies an unstaged file
+    ``git checkout -- filenames``
+
+----
+
+Exercises
+================================================================================
+
+
 
 ----
 
 Branches
 ================================================================================
+
 - branch
 - merge
 
 ----
 
-Exercices
+Exercises
 
 -----
 
+Remotes
+================================================================================
+
+Remote repositories are versions of your project that are hosted on the
+Internet or network somewhere.
+
+- ``git remote`` lists the remote servers you have configured.
+  Tip: For more verbosity, add ``-v`` option.
+
+- ``git remote add name url``: adds the url as a remote
+- ``git remote rm name``: remove the remote ``name``
+
+----
+
 Github
 ================================================================================
+
+.. image:: images/github.png
+
+----
+
+Exercises
+================================================================================
+
+- Create a Github account
+- Upload your ssh key on it
+    - to create an ssh-key on unix-based system: ``ssh-keygen -t dsa``
+    - to create an ssh-key on windows-based system: follow the information
+      `here <http://kb.siteground.com/article/How_to_generate_an_SSH_key_on_Windows_using_PuTTY.html>`_
+- Create a repository named ``SCBC``
+- Add this repository as a remote
 
 ----
 
@@ -180,13 +230,6 @@ Working with many people
 
 ----
 
-Remotes
-================================================================================
-
-adding, deleting remotes. updating a repository with someone elses.
-
-
-----
 
 Exercices
 
