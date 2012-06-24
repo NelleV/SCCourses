@@ -3,8 +3,33 @@ An introduction to Git
 
 ----
 
-Why version control ?
+Why do I need version control ?
 ================================================================================
+
+As researchers, you want:
+
+- reproducible research
+- fast and efficient research
+
+------
+
+A story told by filenames
+================================================================================
+
+.. image:: images/version_control.gif
+
+----
+
+
+Version control
+================================================================================
+
+Version control system:
+
+- keeps all the historical versions for easy tracking.
+- benefits team collaboration.
+- improves our efficiency.
+- can be used as a data center, which makes build automation possible.
 
 ----
 
