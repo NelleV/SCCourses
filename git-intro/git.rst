@@ -11,11 +11,51 @@ Why version control ?
 Creating a project
 ================================================================================
 
-- initialising a repository
-- basic configuration
+- Initializing a new project::
+    ``nelle@Titanic> git init``
+    ``Initialized empty Git repository in /home/nelle/Projets/SCBC/git-test/.git/``
 
-$ git config --global user.name "Your Name Comes Here"
-$ git config --global user.email you@yourdomain.example.com
+
+- Initializing from an existing project::
+    ``$ git clone git://github.com/schacon/grit.git``
+
+----
+
+Configuring Git
+================================================================================
+
+- Locally
+
+- User-wide
+
+- Globally
+
+----
+
+Configuring git
+================================================================================
+
+- Your identity::
+    ``$ git config --global user.name "Your Name Comes Here"``
+    ``$ git config --global user.email you@yourdomain.example.com``
+
+- Setting your editor::
+    ``$ git config --global core.editor emacs``
+
+- Checking your settings::
+    ``$ git config --list``
+
+----
+
+Exercise
+================================================================================
+
+- Clone the repository: ``git://github.com/NelleV/SCBC-data.git``
+- Configure your git environment:
+    - ``git config user.name "Your Name Comes Here"``
+    - ``git config user.email you@yourdomain.example.com``
+    - ``git config color.all auto``
+- Check your configuration settings by using ``git config --list``
 
 ----
 
@@ -24,35 +64,110 @@ Working alone
 
 ----
 
-Status
+Saving a snapshot
 ================================================================================
 
-- git status
-- git diff
-- git log
 
------
+- Tracked files: files that were in the last snapshots
 
-Saving a version
-================================================================================
+  - unmodified
+  - modified
+  - staged
 
-- git add
-- git commit
+- Untracked files: all the other files
 
 ----
 
-Cancelling
+File status lifecycle
 ================================================================================
-- git rest
-- git checkout
+
+
+.. image:: images/git_file_status_lifecycle.png
+
+--------
+
+Commands
+===================
+
+- ``git add``: adds a file to the staging area::
+    ``nelle@Titanic> git add README``
+
+- ``git commit``: commits a file::
+    ``nelle@Titanic> git commit -m "My commit message"``
+
+- ``git status``: show the status of the files of the repository
+
+- ``git log``: Show commit log
 
 ----
 
 Exercices
 ================================================================================
 
+- Create a new file ``AUTHORS`` and add it to the staging area
+- Check what the status of your repository is, by using ``git status``.
+- Commit the AUTHORS file
+- Now edit the TODO file, and check the status of the repository.
+- Add this file to the staging area and commit it
+- Type ``git log`` in the repository. What do you see?
+- Now, edit the ``README`` file, and add it to the staging area, then edit it
+  again, and check the status of the file. What do you see ?
+- Commit all your changes.
+
+----
+
+Cancelling
+================================================================================
+- git reset
+- git checkout
+
+----
+
 ----
 
 Branches
 ================================================================================
+- branch
+- merge
+
+----
+
+Exercices
+
+-----
+
+Github
+================================================================================
+
+----
+
+Updating a repository
+================================================================================
+
+git push
+git fetch
+git merge
+
+----
+
+Working with many people
+================================================================================
+
+----
+
+Remotes
+================================================================================
+
+adding, deleting remotes. updating a repository with someone elses.
+
+
+----
+
+Exercices
+
+-----
+
+Setting up a git repository on a server
+================================================================================
+
 
