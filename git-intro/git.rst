@@ -36,8 +36,9 @@ Version control system:
 Creating a project
 ================================================================================
 
+
 - Initializing a new project::
-    ``nelle@Titanic> git init``
+    ``$ git init``
     ``Initialized empty Git repository in /home/nelle/Projets/SCBC/git-test/.git/``
 
 
@@ -49,11 +50,18 @@ Creating a project
 Configuring Git
 ================================================================================
 
-- Locally
 
-- User-wide
+.. TODO
 
-- Globally
+- **Locally**: only the git repository you are working on will be affected::
+    ``git config [options]``
+
+- **User-wide**: the user's default configuration will be modified in ``~/.git/config``::
+    ``git config --global [options]``
+
+- **Globally**: system-wide configuration: all users are going to be affected::
+    ``git config --system [options]``
+
 
 ----
 
@@ -115,10 +123,10 @@ Commands
 ===================
 
 - ``git add``: adds a file to the staging area::
-    ``nelle@Titanic> git add README``
+    ``$ git add README``
 
 - ``git commit``: commits a file::
-    ``nelle@Titanic> git commit -m "My commit message"``
+    ``$ git commit -m "My commit message"``
 
 - ``git status``: show the status of the files of the repository
 
@@ -152,7 +160,7 @@ Deleting and moving files
 
 ----
 
-Cancelling operations
+Canceling operations
 ================================================================================
 
 - ``git reset HEAD``: unstages filename::
@@ -165,8 +173,6 @@ Cancelling operations
 
 Exercises
 ================================================================================
-
-
 
 ----
 
@@ -206,8 +212,8 @@ Github
 Exercises
 ================================================================================
 
-- Create a Github account
-- Upload your ssh key on it
+- create a Github account
+- upload your ssh key on it
     - to create an ssh-key on unix-based system: ``ssh-keygen -t dsa``
     - to create an ssh-key on windows-based system: follow the information
       `here <http://kb.siteground.com/article/How_to_generate_an_SSH_key_on_Windows_using_PuTTY.html>`_
@@ -219,17 +225,15 @@ Exercises
 Updating a repository
 ================================================================================
 
-git push
-git fetch
-git merge
+- ``git fetch [remote-name]``: fetches the branches on the remote. The branches
+  from that remote are then accessible locally in
+  ``[remote-name/branch-name]``
+- ``git push [remote-name] [branch-name]``: pushed ``[branch-name]`` onto
+  remote ``[branch-name]``
+- ``git merge [branch-name]``: merges ``[branch-name]`` into the current
+  branch
 
 ----
-
-Working with many people
-================================================================================
-
-----
-
 
 Exercices
 
