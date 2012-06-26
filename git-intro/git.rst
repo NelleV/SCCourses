@@ -39,6 +39,7 @@ Creating a project
 
 - Initializing a new project::
     ``$ git init``
+
     ``Initialized empty Git repository in /home/nelle/Projets/SCBC/git-test/.git/``
 
 
@@ -101,7 +102,8 @@ Saving a snapshot
 ================================================================================
 
 
-- Tracked files: files that were in the last snapshots
+- Tracked files: files that were in the last snapshots. They can be in 3
+  different states:
 
   - unmodified
   - modified
@@ -176,13 +178,73 @@ Exercises
 
 ----
 
-Branches
+Commits are repository snapshots.
 ================================================================================
 
-- branch
-- merge
+.. image:: images/git_0.svg
+   :scale: 5%
 
 ----
+
+A branch is a pointer to a commit.
+================================================================================
+
+.. image:: images/git_1.svg
+
+----
+
+So we can have many branches !
+================================================================================
+
+.. image:: images/git_2.svg
+
+----
+
+But how to know in which branch we are ?
+================================================================================
+
+
+.. image:: images/git_3.svg
+
+----
+
+We can switch branches.
+================================================================================
+
+
+.. image:: images/git_4.svg
+
+----
+
+And commit in a branch.
+================================================================================
+
+.. image:: images/git_5.svg
+
+----
+
+Again...
+================================================================================
+
+.. image:: images/git_6.svg
+
+----
+
+And switch branches
+================================================================================
+
+.. image:: images/git_7.svg
+
+----
+
+The code can diverge.
+================================================================================
+
+.. image:: images/git_9.svg
+
+----
+
+
 
 Exercises
 
