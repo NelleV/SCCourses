@@ -244,7 +244,23 @@ The code can diverge.
 
 ----
 
+Commands
+================================================================================
 
+- ``git branch``: manages branches
+
+    - ``git branch``: lists the branches of the local repository
+    - ``git branch [branch_name]``: creates a branch
+    - ``git branch -d [branch_name]``: deletes a branch
+
+- ``git checkout``: moves to a branch:
+
+  - ``git checkout [branch_name]``: moves to a branch
+  - ``git checkout -b [branch_name]``: creates and moves to the branch
+  ``branch_name``
+
+
+----
 
 Exercises
 
