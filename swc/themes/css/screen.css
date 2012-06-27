@@ -575,6 +575,18 @@ pre.highlight {
   font-size: 15px;
 }
 
+tt.docutils {
+  color: #782144;
+  font-size: 0.9em;
+}
+
+span.references p{
+  position: absolute;
+
+  font-size: 0.9em;
+  top: 92%;
+  height: 50px;
+}
 
 /* Pygments default theme */
 .hll { background-color: #ffffcc }

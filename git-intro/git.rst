@@ -11,12 +11,26 @@ As researchers, you want:
 - reproducible research
 - fast and efficient research
 
+.. image:: images/Journal-of-Irrproducibe-Research.jpg
+
+
 ------
 
 A story told by filenames
 ================================================================================
 
 .. image:: images/version_control.gif
+
+.. raw:: html
+
+   <span class="references">
+
+"Piled Higher and Deeper" by Jorge Cham: www.phdcomics.com
+
+.. raw:: html
+
+  </span>
+
 
 ----
 
@@ -71,17 +85,18 @@ Configuring git
 
 - Your identity::
     ``$ git config --global user.name "Your Name Comes Here"``
-    ``$ git config --global user.email you@yourdomain.example.com``
+
+    ``$ git config --global user.email you@yourdomain.com``
 
 - Setting your editor::
-    ``$ git config --global core.editor emacs``
+    ``$ git config --global core.editor vim``
 
 - Checking your settings::
     ``$ git config --list``
 
 ----
 
-Exercise
+Exercises
 ================================================================================
 
 - Clone the repository: ``git://github.com/NelleV/SCBC-data.git``
@@ -91,10 +106,10 @@ Exercise
     - ``git config color.all auto``
 - Check your configuration settings by using ``git config --list``
 
-----
 
-Working alone
-================================================================================
+.. raw:: html
+
+  </div>
 
 ----
 
@@ -116,8 +131,17 @@ Saving a snapshot
 File status lifecycle
 ================================================================================
 
-
 .. image:: images/git_file_status_lifecycle.png
+
+.. raw:: html
+
+   <span class="references">
+
+Pro Git Boot, by Scott Chacon: http://git-scm.com/book
+
+.. raw:: html
+
+  </span>
 
 --------
 
@@ -139,7 +163,7 @@ Commands
 Exercices
 ================================================================================
 
-- Create a new file ``AUTHORS`` and add it to the staging area
+- Create a new file AUTHORS and add it to the staging area
 - Check what the status of your repository is, by using ``git status``.
 - Commit the AUTHORS file
 - Now edit the TODO file, and check the status of the repository.
@@ -181,22 +205,24 @@ Exercises
 Commits are repository snapshots.
 ================================================================================
 
-.. image:: images/git_0.svg
-   :scale: 5%
+.. image:: images/git_0-300dpi.png
+   :scale: 25%
 
 ----
 
 A branch is a pointer to a commit.
 ================================================================================
 
-.. image:: images/git_1.svg
+.. image:: images/git_1-300dpi.png
+   :scale: 25%
 
 ----
 
 So we can have many branches !
 ================================================================================
 
-.. image:: images/git_2.svg
+.. image:: images/git_2-300dpi.png
+   :scale: 25%
 
 ----
 
@@ -204,7 +230,8 @@ But how to know in which branch we are ?
 ================================================================================
 
 
-.. image:: images/git_3.svg
+.. image:: images/git_3-300dpi.png
+   :scale: 25%
 
 ----
 
@@ -212,35 +239,40 @@ We can switch branches.
 ================================================================================
 
 
-.. image:: images/git_4.svg
+.. image:: images/git_4-300dpi.png
+   :scale: 25%
 
 ----
 
 And commit in a branch.
 ================================================================================
 
-.. image:: images/git_5.svg
+.. image:: images/git_5-300dpi.png
+   :scale: 25%
 
 ----
 
 Again...
 ================================================================================
 
-.. image:: images/git_6.svg
+.. image:: images/git_6-300dpi.png
+   :scale: 25%
 
 ----
 
 And switch branches
 ================================================================================
 
-.. image:: images/git_7.svg
+.. image:: images/git_7-300dpi.png
+   :scale: 25%
 
 ----
 
 The code can diverge.
 ================================================================================
 
-.. image:: images/git_9.svg
+.. image:: images/git_9-300dpi.png
+   :scale: 25%
 
 ----
 
@@ -259,12 +291,53 @@ Commands
   - ``git checkout -b [branch_name]``: creates and moves to the branch
   ``branch_name``
 
-
 ----
 
 Exercises
 
+----
+
+Merging
+================================================================================
+
 -----
+
+We had two branches
+================================================================================
+
+.. image:: images/git_10-300dpi.png
+   :scale: 20%
+
+----
+
+Now, let's merge branch test on master
+================================================================================
+
+.. image:: images/git_11-300dpi.png
+   :scale: 20%
+
+----
+
+And we can continue working
+================================================================================
+
+.. image:: images/git_12-300dpi.png
+   :scale: 20%
+
+----
+
+Commands
+================================================================================
+
+- ``git merge`` - join developments history together
+    - ``git merge [branch_name]``: merges [branch_name] onto current branch
+
+
+----
+
+Exercices
+
+----
 
 Remotes
 ================================================================================
@@ -317,7 +390,24 @@ Exercices
 
 -----
 
-Setting up a git repository on a server
+Having private git repositories
 ================================================================================
 
+- ``Github`` 6$/month accounts
+- Setting up a repository on a server
 
+----
+
+Setting up git on a server
+================================================================================
+
+In 3 commands:
+
+  - ``git clone --bare --shared my_project my_project.git``
+  - ``scp -r my_project.git user@git.example.com:/opt/git``
+  - ``git clone user@git.example.com:/opt/git/my_project.git``
+
+----
+
+Thank you for your attention
+================================================================================

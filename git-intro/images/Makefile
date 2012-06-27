@@ -19,7 +19,7 @@ all: $(PNGS)
 .PHONY: all
 
 svgpng=inkscape \
-	--without-gui --export-area-page --export-dpi=$1 --file=$2 --export-png=$3
+	--without-gui --export-background=white --export-area-page --export-dpi=$1 --file=$2 --export-png=$3 --export-background-opacity=0
 
 flatten=convert -flatten +matte $1 $2
 
@@ -29,6 +29,10 @@ flatten=convert -flatten +matte $1 $2
 help:
 	@echo By default, builds PNGs at 600 dpi by default.
 	@echo For instance, call "make DPI=200"
+
+%-$(DPI)dpi.png: %.svg
+	$(call svgpng,$(DPI),$<,$@)
+	-rm alpha_$@
 
 all: $(PDF) $(HTMLTARGET)
 
