@@ -47,6 +47,11 @@ Version control system:
 
 ----
 
+Setting up Git
+================================================================================
+
+----
+
 Creating a project
 ================================================================================
 
@@ -103,13 +108,18 @@ Exercises
 - Configure your git environment:
     - ``git config user.name "Your Name Comes Here"``
     - ``git config user.email you@yourdomain.example.com``
-    - ``git config color.all auto``
+    - ``git config color.ui true``
 - Check your configuration settings by using ``git config --list``
 
 
 .. raw:: html
 
   </div>
+
+----
+
+Saving snapshots
+================================================================================
 
 ----
 
@@ -163,10 +173,10 @@ Commands
 Exercices
 ================================================================================
 
-- Create a new file AUTHORS and add it to the staging area
+- Create a new file ``AUTHORS`` and add it to the staging area
 - Check what the status of your repository is, by using ``git status``.
-- Commit the AUTHORS file
-- Now edit the TODO file, and check the status of the repository.
+- Commit the ``AUTHORS`` file
+- Now edit the ``TODO`` file, and check the status of the repository.
 - Add this file to the staging area and commit it
 - Type ``git log`` in the repository. What do you see?
 - Now, edit the ``README`` file, and add it to the staging area, then edit it
@@ -198,6 +208,18 @@ Canceling operations
 ----
 
 Exercises
+================================================================================
+
+- Rename the file ``src/hello_world.py`` to ``src/hello.py`` using ``git mv``
+- Cancel your changes (use ``git status`` to check whether you've correctly
+  canceled the changes).
+- Create a commit a new file in the ``src`` folder.
+- Now delete this file (don't forget to commit your changes).
+- Use ``git log`` to see the history of the repository.
+
+----
+
+Branching
 ================================================================================
 
 ----
@@ -288,12 +310,20 @@ Commands
 - ``git checkout``: moves to a branch:
 
   - ``git checkout [branch_name]``: moves to a branch
-  - ``git checkout -b [branch_name]``: creates and moves to the branch
-  ``branch_name``
+  - ``git checkout -b [branch_name]``: creates and moves to the branch ``branch_name``
 
 ----
 
 Exercises
+================================================================================
+
+- Create a new branch ``development``, using ``git branch development``.
+- Switch to that branch.
+- Check in which branch you are using ``git branch``.
+- Create a python script that prints the first 10 integers, and commit it.
+- Look at the history of your repository.
+- Switch to the branch ``master``, and look again at the history. What do you
+  see?
 
 ----
 
@@ -336,6 +366,17 @@ Commands
 ----
 
 Exercices
+================================================================================
+
+- Try deleting branch ``development`` using ``git branch -d development``.
+  What do you see ?
+- Merge the changes of branch ``development`` in ``master``.
+- Try to delete the branch ``development`` once again.
+
+----
+
+Working with a server
+================================================================================
 
 ----
 
@@ -368,8 +409,6 @@ Exercises
     - to create an ssh-key on unix-based system: ``ssh-keygen -t dsa``
     - to create an ssh-key on windows-based system: follow the information
       `here <http://kb.siteground.com/article/How_to_generate_an_SSH_key_on_Windows_using_PuTTY.html>`_
-- Create a repository named ``SCBC``
-- Add this repository as a remote
 
 ----
 
@@ -387,8 +426,22 @@ Updating a repository
 ----
 
 Exercices
+================================================================================
+
+- Check your remotes with ``git remote -v``: how many remotes do you have ?
+- Rename the remote ``origin`` to SCBC using ``git remote rename origin
+  SCBC``.
+- Add a remote named ``origin`` with your github repository.
+- Push the changes to the remote ``origin``, and check on github it worked.
+- Fetch the changes from the remote ``SCBC``.
+- Merge the changes from ``SCBC/master`` to your branch ``master``.
 
 -----
+
+Private git repositories
+================================================================================
+
+----
 
 Having private git repositories
 ================================================================================
