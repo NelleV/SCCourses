@@ -362,6 +362,22 @@ Commands
 - ``git merge`` - join developments history together
     - ``git merge [branch_name]``: merges [branch_name] onto current branch
 
+----
+
+Dealing with conflicts
+================================================================================
+
+When a conflict emerges, you must **manually** edit the files::
+
+    <<<<<<< HEAD:calc.py
+    print 'the average is', sum(x) / float(len(x))
+    print 'sumsqdiffs is', sum(diffs)
+    =======
+    avg = sum(x) / float(len(x))
+    sumsqdiffs = sum(diffs) / float(len(x))
+
+    print 'average is', avg, 'and sumsqdiffs is', sumsqdiffs
+    >>>>>>> edgier:calc.py
 
 ----
 
@@ -372,6 +388,7 @@ Exercices
   What do you see ?
 - Merge the changes of branch ``development`` in ``master``.
 - Try to delete the branch ``development`` once again.
+- Checkout branch ``testing`` and try merging branch ``conflict``
 
 ----
 
