@@ -185,19 +185,6 @@ The staging area
 
 ----
 
-
-Canceling operations
-================================================================================
-
-- ``git reset HEAD``: unstages filename::
-    ``$ git reset HEAD filename``
-
-- ``git checkout``: unmodifies an unstaged file
-    ``$ git checkout -- filename1 filename2``
-
--------
-
-
 File status lifecycle
 ================================================================================
 
@@ -215,6 +202,34 @@ Pro Git Boot, by Scott Chacon: http://git-scm.com/book
 
 --------
 
+Canceling operations
+================================================================================
+
+- ``git reset HEAD``: unstages filename::
+    ``$ git reset HEAD filename``
+
+- ``git checkout``: unmodifies an unstaged file
+    ``$ git checkout -- filename1 filename2``
+
+-------
+
+Exercises
+================================================================================
+
+- Create a ``TODO`` file, and add it to the staging area.
+- Remove this file from the staging area.
+- Create a python script called power.py with the following code in it:
+    def power(x):
+        return x ** 2
+- Add this to the staging area and commit it.
+- Now edit it again, and add the following function to the bottom of the file:
+    def square_root(x):
+        return np.sqrt(x)
+- Use git checkout to remove the changes you've made to this file. You can
+  check what you have done using ``git status``.
+- Commit everything.
+
+-------
 
 Branching
 ================================================================================
@@ -357,7 +372,7 @@ Commands
 ================================================================================
 
 - ``git merge`` - join developments history together
-    - ``git merge [branch_name]``: merges [branch_name] onto current branch
+- ``git merge [branch_name]``: merges [branch_name] onto current branch
 
 ----
 
@@ -385,7 +400,6 @@ Exercices
   What do you see ?
 - Merge the changes of branch ``development`` in ``master``.
 - Try to delete the branch ``development`` once again.
-- Checkout branch ``testing`` and try merging branch ``conflict``
 
 ----
 
@@ -415,17 +429,6 @@ Github
 
 ----
 
-Exercises
-================================================================================
-
-- create a Github account
-- upload your ssh key on it
-    - to create an ssh-key on unix-based system: ``ssh-keygen -t dsa``
-    - to create an ssh-key on windows-based system: follow the information
-      `here <http://kb.siteground.com/article/How_to_generate_an_SSH_key_on_Windows_using_PuTTY.html>`_
-
-----
-
 Updating a repository
 ================================================================================
 
@@ -438,19 +441,6 @@ Updating a repository
   branch
 
 ----
-
-Exercices
-================================================================================
-
-- Check your remotes with ``git remote -v``: how many remotes do you have ?
-- Rename the remote ``origin`` to SCBC using ``git remote rename origin
-  SCBC``.
-- Add a remote named ``origin`` with your github repository.
-- Push the changes to the remote ``origin``, and check on github it worked.
-- Fetch the changes from the remote ``SCBC``.
-- Merge the changes from ``SCBC/master`` to your branch ``master``.
-
------
 
 Private git repositories
 ================================================================================
