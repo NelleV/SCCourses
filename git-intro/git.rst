@@ -139,7 +139,7 @@ A few commands
 
 -----
 
-Exercices
+Exercises
 ================================================================================
 
 - Create a new file ``AUTHORS`` and add it.
@@ -393,7 +393,7 @@ When a conflict emerges, you must **manually** edit the files::
 
 ----
 
-Exercices
+Exercises
 ================================================================================
 
 - Try deleting branch ``development`` using ``git branch -d development``.
