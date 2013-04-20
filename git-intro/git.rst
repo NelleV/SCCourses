@@ -104,11 +104,12 @@ Configuring git
 Exercises
 ================================================================================
 
-- Clone the repository: ``git://github.com/NelleV/SCBC-data.git``
+- Create a new folder with the command line and initialize a new git
+  repository.
 - Configure your git environment:
     - ``git config user.name "Your Name Comes Here"``
     - ``git config user.email you@yourdomain.example.com``
-    - ``git config color.ui true``
+    - ``git config color.ui auto``
 - Check your configuration settings by using ``git config --list``
 
 
@@ -123,9 +124,55 @@ Saving snapshots
 
 ----
 
-Saving a snapshot
+A few commands
 ================================================================================
 
+- ``git add``: adds a file to the snapshot we want to take::
+    ``$ git add README``
+
+- ``git commit``: save all the files we added to the snapshots::
+    ``$ git commit -m "My commit message"``
+
+- ``git status``: show the status of the files of the repository
+
+- ``git log``: show commit log
+
+-----
+
+Exercices
+================================================================================
+
+- Create a new file ``AUTHORS`` and add it.
+- Check what the status of your repository is, by using ``git status``.
+- Save the state of your repository with ``git commit``
+- Now edit the ``AUTHORS`` file, and check the status of the repository.
+- Add this file and commit it.
+- Type ``git log`` in the repository. What do you see?
+
+----
+
+Deleting and moving files
+================================================================================
+
+- ``git rm``: Removes files from the working tree::
+      ``git rm FILENAME``
+
+- ``git mv``: Move or rename a file or a directory::
+      ``git mv FILENAME TARGET``
+
+----
+
+Exercises
+================================================================================
+
+- Rename the file ``AUTHORS`` to ``CONTRIBUTORS`` using ``git mv``
+- Now delete this file (don't forget to commit your changes).
+- Use ``git log`` to see the history of the repository.
+
+----
+
+The staging area
+================================================================================
 
 - Tracked files: files that were in the last snapshots. They can be in 3
   different states:
@@ -137,6 +184,19 @@ Saving a snapshot
 - Untracked files: all the other files
 
 ----
+
+
+Canceling operations
+================================================================================
+
+- ``git reset HEAD``: unstages filename::
+    ``$ git reset HEAD filename``
+
+- ``git checkout``: unmodifies an unstaged file
+    ``$ git checkout -- filename1 filename2``
+
+-------
+
 
 File status lifecycle
 ================================================================================
@@ -155,69 +215,6 @@ Pro Git Boot, by Scott Chacon: http://git-scm.com/book
 
 --------
 
-Commands
-===================
-
-- ``git add``: adds a file to the staging area::
-    ``$ git add README``
-
-- ``git commit``: commits a file::
-    ``$ git commit -m "My commit message"``
-
-- ``git status``: show the status of the files of the repository
-
-- ``git log``: Show commit log
-
-----
-
-Exercices
-================================================================================
-
-- Create a new file ``AUTHORS`` and add it to the staging area
-- Check what the status of your repository is, by using ``git status``.
-- Commit the ``AUTHORS`` file
-- Now edit the ``TODO`` file, and check the status of the repository.
-- Add this file to the staging area and commit it
-- Type ``git log`` in the repository. What do you see?
-- Now, edit the ``README`` file, and add it to the staging area, then edit it
-  again, and check the status of the file. What do you see ?
-- Commit all your changes.
-
-----
-
-Deleting and moving files
-================================================================================
-
-- ``git rm``: Removes files from the working tree::
-      ``git rm FILENAME``
-
-- ``git mv``: Move or rename a file or a directory::
-      ``git mv FILENAME TARGET``
-
-----
-
-Canceling operations
-================================================================================
-
-- ``git reset HEAD``: unstages filename::
-    ``git reset HEAD filename``
-
-- ``git checkout``: unmodifies an unstaged file
-    ``git checkout -- filenames``
-
-----
-
-Exercises
-================================================================================
-
-- Rename the file ``src/hello_world.py`` to ``src/hello.py`` using ``git mv``
-- Cancel your changes (use ``git status`` to check whether you've correctly
-  canceled the changes).
-- Create a commit a new file in the ``src`` folder.
-- Now delete this file (don't forget to commit your changes).
-- Use ``git log`` to see the history of the repository.
-
-----
 
 Branching
 ================================================================================
