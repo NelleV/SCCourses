@@ -104,14 +104,12 @@ Configuring git
 Exercises
 ================================================================================
 
-- Create a new folder with the command line and initialize a new git
-  repository.
+- Clone the repository: ``git://github.com/NelleV/SCBC-data.git``
 - Configure your git environment:
     - ``git config user.name "Your Name Comes Here"``
     - ``git config user.email you@yourdomain.example.com``
     - ``git config color.ui auto``
 - Check your configuration settings by using ``git config --list``
-
 
 .. raw:: html
 
@@ -138,6 +136,40 @@ A few commands
 - ``git log``: show commit log
 
 -----
+
+File status
+================================================================================
+
+- Tracked files: files that were in the last snapshots. They can be in 3
+  different states:
+
+  - unmodified
+  - modified
+  - staged
+
+- Untracked files: all the other files
+
+-----
+
+
+File status lifecycle
+================================================================================
+
+
+.. image:: images/git_file_status_lifecycle.png
+
+
+.. raw:: html
+
+  <span class="references">
+
+Pro Git Boot, by Scott Chacon: http://git-scm.com/book
+
+.. raw:: html
+
+   </span>
+
+----
 
 Exercises
 ================================================================================
@@ -168,37 +200,6 @@ Exercises
 - Rename the file ``AUTHORS`` to ``CONTRIBUTORS`` using ``git mv``
 - Now delete this file (don't forget to commit your changes).
 - Use ``git log`` to see the history of the repository.
-
-----
-
-The staging area
-================================================================================
-
-- Tracked files: files that were in the last snapshots. They can be in 3
-  different states:
-
-  - unmodified
-  - modified
-  - staged
-
-- Untracked files: all the other files
-
-----
-
-File status lifecycle
-================================================================================
-
-.. image:: images/git_file_status_lifecycle.png
-
-.. raw:: html
-
-   <span class="references">
-
-Pro Git Boot, by Scott Chacon: http://git-scm.com/book
-
-.. raw:: html
-
-  </span>
 
 --------
 
@@ -439,6 +440,29 @@ Updating a repository
   remote ``[branch-name]``
 - ``git merge [branch-name]``: merges ``[branch-name]`` into the current
   branch
+
+----
+
+
+Exercises
+================================================================================
+
+- Create a github project.
+- Add the url of the project as a remote called ``my_repository``.
+- Push your changes to github:
+  ``git push my_repository master``
+- Check on github that you have indeed pushed your changes.
+- Fetch the changes from the remote ``origin``.
+- Merge the changes from ``origin/master`` to your local master branch (there
+  may be a conflict - if so, resolve it).
+- Push the new changes to your remote called ``my_repository``.
+
+----
+
+Github's workflow
+================================================================================
+
+FIXME
 
 ----
 
