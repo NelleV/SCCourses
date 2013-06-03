@@ -107,14 +107,6 @@ Reproducibility standard
 
 ----
 
-Reproducible spectrum
---------------------------------------------------------------------------------
-
-.. image:: images/reproducible_spectrum.jpg
-   :scale: 65%
-
-----
-
 Organizing a computational project : 2 principles
 ================================================================================
 
@@ -263,8 +255,8 @@ Using makefiles for reproducible research
 Experiments
 ------------
 
-- Record all operations you do, in order to make those operations transparents
-  and reproducable.
+- Record all operations you do, in order to make those operations transparent
+  and reproducible.
 - In practice, create a README, in which you store every command line you use
 - Better, create a makefile in which you store every command line you use.
 
@@ -285,18 +277,25 @@ Experiments
 Makefiles
 --------------------------------------------------------------------------------
 
-TODO
+- associates to each command name a list of actions
+- allow to easily manage dependencies between steps::
+
+  action_2: action_1
+      # Command line steps to create action_2, which depends on action_1
+
+  action_1:
+      # Command line steps for action_1
+      # Multiple lines of shell commands can be used.
 
 ----
 
 Exercices
 --------------------------------------------------------------------------------
 
-- Download the tarball: blah blha
-- Untar it somewhere.
-- Seperate data and code:
-
-  - 
+.. FIXME
+- Clone the git repository: git://github.com/NelleV/soton-rr.git
+- Separate the data and the code using a similar architecture as seen before.
+- Create a makefile to run the two steps.
 
 ----
 
@@ -324,13 +323,6 @@ The notebook
 - entries should be dated
 - verbose, links or embedded images, tables
 - results of all the experiments performed
-
-----
-
-Exercises
---------------------------------------------------------------------------------
-
-FIXME
 
 ----
 
