@@ -1,11 +1,53 @@
 Scientific computing with Numpy
 ================================================================================
 
-
 ------
 
+An example
+================================================================================
+
+Drug responses on cancer cell lines
+
+
+
++-------------+--------+--------+--------+
+|             | Drug A | Drug B | Drug C |
++-------------+--------+--------+--------+
+| Cell line 1 | 2.5    | 3.5    | 3.0    |
++-------------+--------+--------+--------+
+| Cell line 2 | 3.0    | 1.5    | 3.0    |
++-------------+--------+--------+--------+
+| Cell line 3 | 2.5    | 2.0    | 5.5    |
++-------------+--------+--------+--------+
+
+
+- How similar are the response between each cell line?
+
+----
+
+How can we solve this problem?
+================================================================================
+
+- **Option 1**: Write loops
+
+  - It is slow.
+  - It is hard to debug.
+  - It's even harder to tune.
+
+- **Option 2**: Use libraries written in low level languages (fortran, C)
+
+  - ...
+
+- **Option 3**: Use a high level language such as Python or matlab
+
+  - Operates on the whole array at once
+  - No loops
+  - Very fast
+
+----
+
 What are Numpy and numpy arrays
---------------------------------
+================================================================================
 
 :**Python** objects:
 
@@ -58,7 +100,7 @@ Creating arrays
 
 ----
 
-Creating arrays 1 / 5
+Creating arrays (1 / 5)
 ================================================================================
 
 - **1-D**:
@@ -101,7 +143,7 @@ Creating arrays 1 / 5
 
 ----
 
-Creating arrays 2 / 5
+Creating arrays (2 / 5)
 ================================================================================
 
 - Evenly spaced:
@@ -129,7 +171,7 @@ Creating arrays 2 / 5
 
 ----
 
-Creating array 3 / 5
+Creating array (3 / 5)
 ================================================================================
 
 - Arrays of ones:
@@ -154,7 +196,7 @@ Creating array 3 / 5
 
 ----
 
-Creating arrays 4 / 5
+Creating arrays (4 / 5)
 ================================================================================
 
 - Identity:
@@ -181,7 +223,7 @@ Creating arrays 4 / 5
 
 ------
 
-Creating arrays 5 / 5
+Creating arrays (5 / 5)
 ================================================================================
 
 - Random numbers:
@@ -456,6 +498,24 @@ Fancy indexing
 
 -------
 
+Exercises
+================================================================================
+
+Write a python function that takes a 1D array as input and returns another 1D
+array containing only the positive elements.
+
+An example on how your function should behave:
+
+.. code-block:: python
+
+   import numpy as np
+   X = np.arange(10) - 5
+   print X  # [-5 -4 -3 -2 -1  0  1  2  3  4]
+   pos_x = positive_elements(X)
+   print pos_X  # [1 2 3 4]
+
+-----
+
 Operations
 ================================================================================
 
@@ -601,9 +661,15 @@ Exercises
 ``a_j = 2^(3*j) - j``
 
 .. FIXME
-- Download XXX and load it using::
+
+- Download http://cbio.ensmp.fr/~nvaroquaux/swc-data.zip and load it using:
+
+.. code-block:: python
+
+    >>> import numpy as np
     >>> data = np.loadtxt('data/populations.txt')
     >>> year, hares, lynxes, carrots = data.T  # trick: columns to variables
+
 - Compute the mean of the different populations over time.
 
 -----
@@ -658,7 +724,10 @@ Exercises
 ================================================================================
 
 - Visualise the evolution of the different population loaded in the previous
-  exercise
+  exercise.
+
+- Generate a random array of size (100, 100) using ``np.random.randn``, and
+  visualise it.
 
 ----
 
@@ -688,4 +757,116 @@ An illustration...
     :align: center
     :width: 90%
 
+----
 
+A useful trick
+================================================================================
+
+``np.newaxis`` can be used to add an axis to an array.
+
+
+  .. code-block:: python
+
+      >>> a = np.arange(0, 40, 10)
+      >>> a.shape
+      (4,)
+      >>> a = a[:, np.newaxis]  # adds a new axis -> 2D array
+      >>> a.shape
+      (4, 1)
+      >>> a
+      array([[ 0],
+            [10],
+            [20],
+            [30]])
+      >>> a + b
+      array([[ 0,  1,  2],
+            [10, 11, 12],
+            [20, 21, 22],
+            [30, 31, 32]])
+
+----
+
+Exercises
+================================================================================
+
+Write a function that takes as input a two 1D array and returns a 2D array
+containing the products of each element of the first array with the elements
+of the second array.
+
+An example on how your function should behave:
+
+.. code-block:: python
+
+   import numpy as np
+   a = np.arange(3)
+   b = np.array([-1., 1., 2.])
+   print multiplication_table(a, b)
+
+should print
+
+.. code-block:: python
+
+   [[-0. 0. 0.],
+    [-1. 1. 2.],
+    [-2. 2. 4.]]
+
+----
+
+Array shape manipulation
+================================================================================
+
+----
+
+Basic operations
+================================================================================
+
+- Flattening: ``np.ravel``, ``np.flatten``
+- Reshaping: ``np.reshape``
+- Adding a dimension: ``np.newaxis``
+- Dimension shuffling: ``a.transpose(1, 2, 0)``
+- Resize: ``np.resize``
+- Repeat: ``np.repeat``
+
+----
+
+Exercises
+================================================================================
+
+Write a function that takes a one-dimensional array argument and returns
+another one-dimensional array containing the differences between neighbouring
+points in the input array.
+
+An example on how your function should behave:
+
+.. code-block:: python
+
+   import numpy as np
+   X = np.array([1., 2., -3., 0.])
+   print differences(X)  # [1. -5. 3.]
+
+----
+
+Exercises
+================================================================================
+
+Write a function that takes a 2D array argument and returns another 2D array
+of twice the size of the input along each dimension. Each element of the input
+array is copied to four adjacent elements of the output array.
+
+An example on how your function should behave:
+
+.. code-block:: python
+
+   import numpy as np
+   a = np.array([[1, 2], [3, 4]])
+   print repeat_twice(a)
+
+should print
+
+
+.. code-block:: python
+
+   [[1 1 2 2],
+    [1 1 2 2],
+    [3 3 4 4],
+    [3 3 4 4]]
