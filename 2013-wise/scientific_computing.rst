@@ -21,7 +21,7 @@ Drug responses on cancer cell lines
 +-------------+--------+--------+--------+
 
 
-- How similar are the response between each cell line?
+- How similar are the responses between each cell line?
 
 ----
 
@@ -402,6 +402,9 @@ Exercises
          [0., 0., 0., 5., 0.],
          [0., 0., 0., 0., 6.]]
 
+- Now slice the matrix to put the first row in a variable b.
+- Set the first element of b to 1.
+- Look at a. What do you see?
 
 .. FIXME maybe add something in which people create an array, slice it
    modifies the slice, and view the difference.
@@ -726,7 +729,7 @@ Exercises
 - Visualise the evolution of the different population loaded in the previous
   exercise.
 
-- Generate a random array of size (100, 100) using ``np.random.randn``, and
+- Generate a random array of size (100, 100) using ``np.random.rand``, and
   visualise it.
 
 ----
