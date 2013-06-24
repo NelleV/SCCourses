@@ -31,7 +31,6 @@ A story told by filenames
 
   </span>
 
-
 ----
 
 
@@ -63,7 +62,7 @@ Creating a project
 
 
 - Initializing from an existing project::
-    ``$ git clone git://github.com/schacon/grit.git``
+    ``$ git clone http://github.com/schacon/grit.git``
 
 ----
 
