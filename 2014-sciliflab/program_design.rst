@@ -1,13 +1,83 @@
 ================================================================================
-Testing with Python
+Software design, Packaging and Testing
 ================================================================================
 
 ---------
 
-Based on materials by T. Guy, K. Huff, R. Slaybaugh, and A. Scopatz
-================================================================================
+Software design
+===================
+
+Software design is the process by which an agent creates a specification of a
+software artifact, intended to accomplish goals, using a set of primitive
+components and subject to constraints. Software design may refer to either
+"all the activities involved in conceptualizing, framing, implementing,
+commissioning, and ultimately modifying complex systems" or "the activity
+following requirements specification and before programming, as ... [in] a
+stylized software engineering process."
+
+Software design usually involves problem solving and planning a software
+solution. This includes both low-level component and algorithm design and
+high-level, architecture design.
 
 ----
+
+Software design in short
+==========================
+
+How to write good code ?
+
+-------
+
+How to write good code ?
+=========================
+
+.. image:: images/good_code.png
+  :width: 320px
+
+-----
+
+Packaging
+==============
+
+-----
+
+Why ?
+========
+
+- Distribute your code to others
+- Make your code installable in the usual manner most Python developers would
+  expect
+- Standard Python Package are cross- platform (Windows, OSX, Linux...)
+- It organizes your code in a standard way.
+
+------
+
+Typical Project Layout
+======================
+
+.. image:: images/typical_project_layout.png
+   :width: 520px
+
+
+-----
+
+A Sample Setup.py
+======================
+
+.. image:: examples/sample_setup.png
+   :width: 520px
+
+
+.. XXX REDO
+
+-----
+
+
+
+Testing
+==============
+
+-----
 
 Outline
 ================================================================================
