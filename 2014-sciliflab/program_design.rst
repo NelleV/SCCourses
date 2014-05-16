@@ -36,6 +36,64 @@ How to write good code ?
 
 -----
 
+The Tunnel vision
+===================
+
+A good designer should consider **alternative approaches**, judging each based
+on the requirements of the problem, the resources available to do the job.
+
+- Choose carefully the skills needed to contribute to the project: the
+  intersection of people knowlegeable both in C++ and convex optimization is
+  fairly small;
+- Balance between complexity and functionnality gain;
+- Delimitate the project goals;
+
+
+-----
+
+Don't reinvent the wheel
+========================
+
+Time is short, and ressources are limited! 
+
+
+---------
+
+Quality, Uniformity and integration
+====================================
+
+The goal is to add value to your personal code:
+
+- documentation, examples;
+- efficiency, generality of the code;
+- tests: code base easily modifiable by anyone;
+- Code style convention (pep8 for Python);
+
+-----
+
+Modularity
+============
+
+The resulting software comprises well defined, independent components. better
+maintainability.
+
+- Implementation and tests in separate modules.
+- Division of work between the team.
+- Ease of reusability
+
+-----
+
+Reviews
+=========
+
+- Avoids flaws in the major conceptual elements of the design:
+  
+  - omissions
+  - ambiguity
+  - inconsistency
+
+-----
+
 Packaging
 ==============
 
@@ -72,6 +130,47 @@ A Sample Setup.py
 
 -----
 
+And now
+========
+
+- Installing : ``python setup.py install``
+- Uninstalling :
+
+  - ``pip remove scbctesting``
+  - ``rm -rf /usr/local/lib/python2.7/site-packages/scbctesting/``
+
+-----
+
+Creating the package
+====================
+
+- ``python setup.py sdist``
+- ``python setup.py sdist --formats=gztar,zip``
+
+But it is best to create a Manifest template file first.
+
+-------
+
+Exercise
+===========
+
+Create a file: MANIFEST.in next to
+setup.py with the content:
+include README.md
+include LICENSE.txt
+recursive-include scbctesting *
+Then run:
+$ python setup.py sdist
+
+
+-----
+
+To learn more on distutils
+===========================
+
+ http://docs.python.org/2/distutils/index.html
+
+-----
 
 
 Testing
@@ -208,3 +307,6 @@ Testing Exceptions
 
 Exercises
 ================================================================================
+
+------
+
