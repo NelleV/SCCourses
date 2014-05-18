@@ -294,6 +294,75 @@ Undo a merge or pull
 - ``git reset --hard ORIG_HEAD`` : you merged a branch which resulted in a
   fast forward, and you want to cancel it.
 
+
+-------
+
+Working with a server
+================================================================================
+
+----
+
+Remotes
+================================================================================
+
+Remote repositories are versions of your project that are hosted on the
+Internet or network somewhere.
+
+- ``git remote`` lists the remote servers you have configured.
+  Tip: For more verbosity, add ``-v`` option.
+
+- ``git remote add name url``: adds the url as a remote
+- ``git remote rm name``: remove the remote ``name``
+
+----
+
+Github
+================================================================================
+
+.. image:: images/github.png
+
+----
+
+Updating a repository
+================================================================================
+
+- ``git fetch [remote-name]``: fetches the branches on the remote. The branches
+  from that remote are then accessible locally in
+  ``[remote-name/branch-name]``
+- ``git push [remote-name] [branch-name]``: pushed ``[branch-name]`` onto
+  remote ``[branch-name]``
+- ``git merge [branch-name]``: merges ``[branch-name]`` into the current
+  branch
+
+----
+
+Github's workflow
+================================================================================
+
+----
+
+Private git repositories
+================================================================================
+
+----
+
+Having private git repositories
+================================================================================
+
+- ``Github`` 6$/month accounts
+- Setting up a repository on a server
+
+----
+
+Setting up git on a server
+================================================================================
+
+In 3 commands:
+
+  - ``git clone --bare --shared my_project my_project.git``
+  - ``scp -r my_project.git user@git.example.com:/opt/git``
+  - ``git clone user@git.example.com:/opt/git/my_project``
+
 ----
 
 Tags
@@ -378,78 +447,6 @@ Rewriting more than the last commit
 ================================================================================
 
 - ``git rebase -i HEAD~3``
-
-
-
--------
-
-Working with a server
-================================================================================
-
-----
-
-Remotes
-================================================================================
-
-Remote repositories are versions of your project that are hosted on the
-Internet or network somewhere.
-
-- ``git remote`` lists the remote servers you have configured.
-  Tip: For more verbosity, add ``-v`` option.
-
-- ``git remote add name url``: adds the url as a remote
-- ``git remote rm name``: remove the remote ``name``
-
-----
-
-Github
-================================================================================
-
-.. image:: images/github.png
-
-----
-
-Updating a repository
-================================================================================
-
-- ``git fetch [remote-name]``: fetches the branches on the remote. The branches
-  from that remote are then accessible locally in
-  ``[remote-name/branch-name]``
-- ``git push [remote-name] [branch-name]``: pushed ``[branch-name]`` onto
-  remote ``[branch-name]``
-- ``git merge [branch-name]``: merges ``[branch-name]`` into the current
-  branch
-
-----
-
-Github's workflow
-================================================================================
-
-----
-
-Private git repositories
-================================================================================
-
-----
-
-Having private git repositories
-================================================================================
-
-- ``Github`` 6$/month accounts
-- Setting up a repository on a server
-
-----
-
-Setting up git on a server
-================================================================================
-
-In 3 commands:
-
-  - ``git clone --bare --shared my_project my_project.git``
-  - ``scp -r my_project.git user@git.example.com:/opt/git``
-  - ``git clone user@git.example.com:/opt/git/my_project``
-
-----
 
 Thank you for your attention
 ================================================================================
