@@ -15,16 +15,24 @@ commissioning, and ultimately modifying complex systems" or "the activity
 following requirements specification and before programming, as ... [in] a
 stylized software engineering process."
 
-Software design usually involves problem solving and planning a software
-solution. This includes both low-level component and algorithm design and
-high-level, architecture design.
+Software design usually involves **problem solving** and **planning a software
+solution**.
 
 ----
 
 Software design in short
 ==========================
 
-How to write good code ?
+.. raw:: html
+
+   <span class="big">
+
+How to write good and maintainable code?
+
+.. raw:: html
+
+   </span>
+
 
 -------
 
@@ -74,7 +82,7 @@ The goal is to add value to your personal code:
 Modularity
 ============
 
-The resulting software comprises well defined, independent components. better
+The resulting software comprises well defined, independent components. Better
 maintainability.
 
 - Implementation and tests in separate modules.
@@ -87,10 +95,16 @@ Reviews
 =========
 
 - Avoids flaws in the major conceptual elements of the design:
-  
+
   - omissions
   - ambiguity
   - inconsistency
+
+-----
+
+An example: the loft
+====================
+
 
 -----
 
@@ -119,6 +133,18 @@ Typical Project Layout
 
 -----
 
+Exercise
+===========
+
+- Clone the exercise repository:
+
+  ``git clone https://github.com/NelleV/SCExercises``
+
+- See ``exercises/packaging_01.rst``.
+
+-----
+
+
 A Sample Setup.py
 ======================
 
@@ -127,6 +153,14 @@ A Sample Setup.py
 
 
 .. XXX REDO
+
+-----
+
+
+Exercise
+===========
+
+See ``exercises/packaging_02.rst``.
 
 -----
 
@@ -154,14 +188,7 @@ But it is best to create a Manifest template file first.
 Exercise
 ===========
 
-Create a file: MANIFEST.in next to
-setup.py with the content:
-include README.md
-include LICENSE.txt
-recursive-include scbctesting *
-Then run:
-$ python setup.py sdist
-
+See ``exercises/packaging_03.rst``
 
 -----
 
@@ -270,6 +297,8 @@ When should I write & run tests?
 Exercises
 ================================================================================
 
+See ``exercises/testing_01.rst``.
+
 -----
 
 nose.tools assertions
@@ -292,7 +321,7 @@ Test Corner Cases
   empty strings, empty files, NaN inputs...?
 - Test the type of exceptions raised in case
   of invalid input:
-  
+
   - Wrong type should raise TypeError
   - Invalid type should raise ValueError
 
