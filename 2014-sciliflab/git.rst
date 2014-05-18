@@ -440,6 +440,8 @@ Rewriting the last commit
 ================================================================================
 
 - ``git commit --amend``: allows to change the last commit
+- ``git commit --amend --reset-author`` : changes the author of the last commit
+
 
 -------
 
@@ -468,6 +470,12 @@ branch"
 
 Interactive stashing
 ====================
+
+
+-----
+
+Interactive stashing
+=======================
 
 Allows to interactively stash files:
 
