@@ -581,7 +581,7 @@ all commits of a branch matching this developpers email.
 
 ----
 
-Exercises
+Exercises 1 / 2
 =============================
 
 - Fork the repository XXX and clone your fork locally.
@@ -592,13 +592,25 @@ Exercises
 
 - Try merging the food branch into master using the following command:
   ``git merge --ff-only food``. It fails. Do you understand why ?
-- Now, go to the food branch and rebase master onto branch. Then, switch back
-to master, and try merging the food branch with the previous command again.
-- Switch to the eratique branch, and rebase master onto that branch. There
-shourd be a conflict. Solve it.
-- Switch back to the master branch, and cherry-pick the first commit of the
-eratique branch.
 
+------
+
+Exercises 2 / 2
+=============================
+
+
+- Now, go to the food branch and rebase master onto branch. Then, switch back
+  to master, and try merging the food branch with the previous command again.
+- Switch to the eratique branch. Edit the neuneu class, and try rebasing
+  master onto that branch. What happens?
+- Now stash your files, and rebase master onto that branch. There
+  should be a conflict. Solve it.
+- Now interactively rebase commits of the erratique branch: squash the two
+  last commits together.
+- Switch back to the master branch, and cherry-pick the last commit of the
+  eratique branch.
+- Tag this current version with an annotated tag, and push the tag onto
+  github
 
 ----
 
