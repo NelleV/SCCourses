@@ -62,7 +62,19 @@ on the requirements of the problem, the resources available to do the job.
 Don't reinvent the wheel
 ========================
 
-Time is short, and ressources are limited! 
+.. raw:: html
+
+   <span class="big">
+
+
+
+Time is short, and resources are limited!
+
+
+.. raw:: html
+
+   </span>
+
 
 
 ---------
@@ -337,5 +349,71 @@ Testing Exceptions
 Exercises
 ================================================================================
 
+See ``exercises/testing_02.rst`` and ``exercises/testing_03.rst``.
+
 ------
 
+Checking the test coverage
+================================================================================
+
+To check the coverage:
+
+- First, install coverage:
+
+    ``pip install coverage``
+
+- Then type:
+
+    ``nosetests --with-coverage mypackage``
+
+----
+
+Documentation
+===============
+
+-----
+
+User documentation
+===================
+
+- Usually written in Restructured Text, with Sphinx.
+- Placed at the root of the project, in a ``doc`` folder.
+- Might include:
+
+  - An introduction (very short overview of the project);
+  - A tutorial;
+  - An API reference, generated from its docstrings;
+  - Developer documentation, for potential contributors;
+
+----
+
+Code documentation advices
+==============================
+
+- Comments in Python start with a ``#``
+- Docstrings are placed at the beginning of the function, between triple
+  quotes.
+
+
+.. image:: examples/doc_example.png
+  :width: 800px
+
+
+**Do not use triple quotes to comment section of code!!**
+
+----
+
+Numpy doc
+=================
+
+- Specific conventions for scientific code: imports, sections, etc
+- Sphinx plugin for better integration
+
+
+See
+``https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt``
+
+----
+
+Thanks
+===========
