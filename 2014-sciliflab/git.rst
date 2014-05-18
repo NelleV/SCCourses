@@ -332,6 +332,35 @@ Stashing
 
 -----
 
+What is stashing?
+====================
+
+Used to record the current state of the repository and the index, but switches
+back to a clean working directory:
+
+  - saves the local modifications away
+  - reverts back to HEAD.
+
+
+-----
+
+Stashing
+==========
+
+- ``git stash save <message>`` : creates a new stash
+- ``git stash list`` : lists all the stashes
+- ``git stash show <stash_id>`` : shows the stash as a diff
+- ``git stash pop`` : apply the last stash
+- ``git stash apply <stash_id>`` : apply the ``stash_id``
+
+----
+
+When is this useful ?
+=====================
+
+- When benchmarking a patch (was it faster before or after?).
+- When debugging a patch (was it buggy before?).
+- Before merging or rebasing.
 
 -----
 
