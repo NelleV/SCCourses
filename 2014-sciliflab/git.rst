@@ -667,7 +667,10 @@ subdirectory of the source tree, pointed to a specific commit.
 Adding, updating, synchronizing git submodules
 ==============================================
 
-TODO
+-  ``git submodule add url folder``: creates the submodule and clones it into
+  the folder
+- ``git submodule init``: initializes the submodules of a cloned repository
+- ``git submodule update``: updates the submodules
 
 -----
 
