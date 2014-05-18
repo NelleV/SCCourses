@@ -447,6 +447,46 @@ Rewriting more than the last commit
 ================================================================================
 
 - ``git rebase -i HEAD~3``
+- ``git rebase -i <commit_id>``
+
+
+----
+
+Using rebase to have a linear history
+===============================================================
+
+Assume you have created a branch from master, but master has moved forward.
+Merging will create a commit. To avoid this, you can "rebase master onto your
+branch"
+
+- ``git rebase master`` or ``git rebase master branch_name``
+
+
+**Never rebase a branch onto master!!**
+
+----
+
+Interactive stashing
+====================
+
+Allows to interactively stash files:
+
+- ``git add -i``
+
+
+-----
+
+Using git with an svn repository
+======================================
+
+You can use git with an svn repository:
+
+- First, install svn and git-svn
+- Clone the repository: ``git svn clone url``
+- To push to the server: ``git svn dcommit``
+- To pull from the server: ``git svn rebase``
+
+------
 
 Thank you for your attention
 ================================================================================
