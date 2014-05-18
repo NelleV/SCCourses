@@ -368,10 +368,32 @@ In 3 commands:
 Searching in a git repository
 =======================================
 
+-----
+
+git grep
+================
+
 When using grep to find files on a git repository, the resultr are going to be
 polluted with git's filesystem.
 
 ``git grep`` allows to search for a pattern in the files of the index.
+
+----
+
+Cherrry-picking commits
+=========================
+
+-----
+
+Cherry-picking
+================
+
+**Allows to apply changes introduced by some commits.**
+
+**Typical usecase:** retrieving changes applied in a master branch into a release
+branch.
+
+- ``git cherry-pick [commit_id]``
 
 ----
 
@@ -537,6 +559,7 @@ subdirectory of the source tree, pointed to a specific commit.
 Adding, updating, synchronizing git submodules
 ==============================================
 
+TODO
 
 -----
 
@@ -547,6 +570,9 @@ Git has a lot of powerful commands. With power comes responsabilities.
 
 The more complex the commands you use are, the higher potential very dangerous
 effects it can have on your repository.
+
+If any problem occurs, you can check the connectivity and validity of the
+objects in your database using ``git fsck``.
 
 ----
 
