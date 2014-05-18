@@ -134,6 +134,60 @@ Canceling operations
     ``$ git checkout -- filename1 filename2``
 
 
+-----
+
+Exercises 1 / 4
+================================================================================
+
+- Initialize a git repository.
+- Configure your git environment:
+    - ``git config user.name "Your Name Comes Here"``
+    - ``git config user.email you@yourdomain.example.com``
+    - ``git config color.ui auto``
+- Check your configuration settings by using ``git config --list``
+
+----------
+
+Exercises 2 / 4
+======================
+
+
+- Create a new file ``AUTHORS`` and add it.
+- Check what the status of your repository is, by using ``git status``.
+- Save the state of your repository with ``git commit``
+- Now edit the ``AUTHORS`` file, and check the status of the repository.
+- Add this file and commit it.
+- Type ``git log`` in the repository. What do you see?
+- Rename the file ``AUTHORS`` to ``CONTRIBUTORS`` using ``git mv``
+- Now delete this file (don't forget to commit your changes).
+- Use ``git log`` to see the history of the repository.
+
+---------
+
+Exercises 3  / 4
+======================
+
+- Create a ``TODO`` file, and add it to the staging area.
+- Remove this file from the staging area.
+- Create a python script called power.py with the following code in it:
+    def power(x):
+        return x ** 2
+
+- Add this to the staging area and commit it.
+
+-----------
+
+Exercises 4 / 4
+================
+
+- Now edit it again, and add the following function to the bottom of the file:
+    def square_root(x):
+        return np.sqrt(x)
+- Use git checkout to remove the changes you've made to this file. You can
+  check what you have done using ``git status``.
+- Commit everything.
+
+
 -------
 
 Branching
@@ -294,6 +348,22 @@ Undo a merge or pull
 - ``git reset --hard ORIG_HEAD`` : you merged a branch which resulted in a
   fast forward, and you want to cancel it.
 
+------
+
+Exercises
+================================================================================
+
+- Create a new branch ``development``, using ``git branch development``.
+- Switch to that branch.
+- Check in which branch you are using ``git branch``.
+- Create a python script that prints the first 10 integers, and commit it.
+- Look at the history of your repository.
+- Switch to the branch ``master``, and look again at the history. What do you see?
+- Try deleting branch ``development`` using ``git branch -d development``.
+  What do you see ?
+- Merge the changes of branch ``development`` in ``master``.
+- Try to delete the branch ``development`` once again.
+
 
 -------
 
@@ -409,8 +479,7 @@ Tagging
 
   - ``git tag v1.4-lw``
 
-- **Annotated:** contains tagger name, e-mail, date, a message, can be signed and
- verified
+- **Annotated:** contains tagger name, e-mail, date, a message, can be signed and verified
 
     - ``git tag -a v1.4 -m 'my version 1.4'``
     - ``git tag -s v1.4 -m 'my version 1.4'``
@@ -512,6 +581,27 @@ all commits of a branch matching this developpers email.
 
 ----
 
+Exercises
+=============================
+
+- Fork the repository XXX and clone your fork locally.
+- Create the branches matching the ones of the repository:
+    - git branch documentation origin/documentation
+    - git branch food origin/food
+    - git branch eratique origin/eratique
+
+- Try merging the food branch into master using the following command:
+  ``git merge --ff-only food``. It fails. Do you understand why ?
+- Now, go to the food branch and rebase master onto branch. Then, switch back
+to master, and try merging the food branch with the previous command again.
+- Switch to the eratique branch, and rebase master onto that branch. There
+shourd be a conflict. Solve it.
+- Switch back to the master branch, and cherry-pick the first commit of the
+eratique branch.
+
+
+----
+
 Interactive stashing
 ====================
 
@@ -530,6 +620,12 @@ Allows to interactively stash files:
 
 Using git with an svn repository
 ======================================
+
+---------
+
+Using git with an svn repository
+======================================
+
 
 You can use git with an svn repository:
 
