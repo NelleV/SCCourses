@@ -365,6 +365,16 @@ In 3 commands:
 
 ----
 
+Searching in a git repository
+=======================================
+
+When using grep to find files on a git repository, the resultr are going to be
+polluted with git's filesystem.
+
+``git grep`` allows to search for a pattern in the files of the index.
+
+----
+
 Tags
 ================================================================================
 
@@ -468,6 +478,18 @@ branch"
 
 ----
 
+Rewrites history of a complete branch
+========================================
+
+``git filter-branch`` allows you to rewrite the history of a branch.
+
+For example, if a developper has changed email adresse, you can update it for
+all commits of a branch matching this developpers email.
+
+**This command is extremely dangerous. Use with care.**
+
+----
+
 Interactive stashing
 ====================
 
@@ -495,6 +517,39 @@ You can use git with an svn repository:
 - To pull from the server: ``git svn rebase``
 
 ------
+
+Submodules
+================================
+
+-----
+
+What are submodules?
+====================
+
+Submodules allow foreign repositories to be embedded within a dedicated
+subdirectory of the source tree, pointed to a specific commit.
+
+- Git repositories inside git repositories
+- Useful for subprojects
+
+-----
+
+Adding, updating, synchronizing git submodules
+==============================================
+
+
+-----
+
+A note of warning
+==========================
+
+Git has a lot of powerful commands. With power comes responsabilities.
+
+The more complex the commands you use are, the higher potential very dangerous
+effects it can have on your repository.
+
+----
+
 
 Thank you for your attention
 ================================================================================
