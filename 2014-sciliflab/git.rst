@@ -3,6 +3,25 @@ An introduction to Git
 
 ----
 
+About me
+==========
+
+.. raw:: html
+
+   <span class="big">
+
+Nelle Varoquaux
+
+CBIO Mines ParisTech, U900 Institut Curie, INSERM
+
+http://cbio.ensmp.fr/~nvaroquaux/teaching/2014-scilifelab/git.html
+
+.. raw:: html
+
+   </span>
+
+-----
+
 Setting up Git
 ================================================================================
 
