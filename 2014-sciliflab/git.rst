@@ -554,6 +554,13 @@ Rewriting more than the last commit
 - ``git rebase -i HEAD~3``
 - ``git rebase -i <commit_id>``
 
+When there is a conflict:
+
+- Edit the files manually.
+- Add the edited files to the staging area: ``git add <filename>``
+- Continue the rebase with ``git rebase --continue``
+- Or abort ``git rebase --abort``
+
 
 ----
 

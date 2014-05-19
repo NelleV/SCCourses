@@ -58,3 +58,8 @@ $(PDF): $(TEX)
 	sed -i 's/[ \t]*$$//' $<
 	touch $@ # stamp to avoid re seding
 	@echo Removal of trailing spaces: should be taken care of by vim.
+
+deploy:
+	rsync -avz --copy-links images nvaroquaux@cbio.ensmp.fr:public_html/teaching/2014-scilifelab
+	rsync -avz --copy-links themes nvaroquaux@cbio.ensmp.fr:public_html/teaching/2014-scilifelab
+	rsync -avz *.html nvaroquaux@cbio.ensmp.fr:public_html/teaching/2014-scilifelab
