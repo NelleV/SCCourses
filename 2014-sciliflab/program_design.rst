@@ -79,7 +79,7 @@ Time is short, and resources are limited!
 
 ---------
 
-Quality, Uniformity and integration
+Quality, Uniformity and Integration
 ====================================
 
 The goal is to add value to your personal code:
@@ -111,12 +111,6 @@ Reviews
   - omissions
   - ambiguity
   - inconsistency
-
------
-
-An example: the loft
-====================
-
 
 -----
 
