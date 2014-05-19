@@ -450,7 +450,7 @@ polluted with git's filesystem.
 
 ----
 
-Cherrry-picking commits
+Cherry-picking commits
 =========================
 
 -----
@@ -534,7 +534,9 @@ When is this useful ?
 
 -----
 
-Rebasing
+Changing the history
+======================
+
 ----
 
 Rewriting the last commit
@@ -584,7 +586,7 @@ all commits of a branch matching this developpers email.
 Exercises 1 / 2
 =============================
 
-- Fork the repository XXX and clone your fork locally.
+- Fork the repository https://github.com/NelleV/SCLoft.git and clone your fork locally.
 - Create the branches matching the ones of the repository:
     - git branch documentation origin/documentation
     - git branch food origin/food
