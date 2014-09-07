@@ -488,6 +488,11 @@ Exercises
   may be a conflict - if so, resolve it).
 - Push the new changes to your remote called ``my_repository``.
 
+-----
+
+The Github workflow
+====================
+
 ----
 
 Private git repositories
