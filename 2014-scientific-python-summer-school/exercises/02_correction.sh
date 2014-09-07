@@ -1,5 +1,5 @@
 # Rename the file ``AUTHORS`` to ``CONTRIBUTORS`` using ``git mv`` and commit
-# your changs
+# your changes
 git mv AUTHORS CONTRIBUTORS
 git commit -m "Renamed AUTHORS to CONTRIBUTORS"
 

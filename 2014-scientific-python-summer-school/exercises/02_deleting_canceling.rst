@@ -1,5 +1,6 @@
-- Rename the file ``AUTHORS`` to ``CONTRIBUTORS`` using ``git mv``
-- Now delete this file (don't forget to commit your changes).
+- Rename the file ``AUTHORS`` to ``CONTRIBUTORS`` using ``git mv`` and commit
+your changes
+- Now delete this file and commit your changes
 - Use ``git log`` to see the history of the repository.
 - Create a ``TODO`` file, and add it to the staging area.
 - Remove this file from the staging area.
@@ -10,5 +11,3 @@
         return np.sqrt(x)
 - Use git checkout to remove the changes you've made to this file. You can
   check what you have done using ``git status``.
-- Commit everything.
-

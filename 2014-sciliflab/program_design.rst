@@ -409,6 +409,14 @@ Numpy doc
 See
 ``https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt``
 
+
+----
+
+Exercises
+===========
+
+See the ``exercises/program_design.rst``
+
 ----
 
 Thanks
