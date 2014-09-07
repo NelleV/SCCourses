@@ -7,16 +7,18 @@ Software design, Packaging and Testing
 Software design
 ===================
 
-Software design is the process by which an agent creates a specification of a
-software artifact, intended to accomplish goals, using a set of primitive
-components and subject to constraints. Software design may refer to either
-"all the activities involved in conceptualizing, framing, implementing,
-commissioning, and ultimately modifying complex systems" or "the activity
-following requirements specification and before programming, as ... [in] a
-stylized software engineering process."
+- Software design is the process by which an agent creates a **specification
+  of a software artifact**, intended to **accomplish goals**, using a set of
+  primitive components and subject to constraints.
 
-Software design usually involves **problem solving** and **planning a software
-solution**.
+- Software design may refer to either **"all the activities involved in
+  conceptualizing, framing, implementing, commissioning, and ultimately
+  modifying complex systems"** or "the activity following requirements
+  specification and before programming, as ... [in] a stylized software
+  engineering process."
+
+- Software design usually involves **problem solving** and **planning a software
+  solution**.
 
 ----
 
@@ -94,9 +96,9 @@ The goal is to add value to your personal code:
 Modularity
 ============
 
-The resulting software comprises well defined, independent components. Better
-maintainability.
+The resulting software comprises well defined, independent components.
 
+- Better maintainability.
 - Implementation and tests in separate modules.
 - Division of work between the team.
 - Ease of reusability
@@ -176,8 +178,8 @@ And now
 - Installing : ``python setup.py install``
 - Uninstalling :
 
-  - ``pip remove scbctesting``
-  - ``rm -rf /usr/local/lib/python2.7/site-packages/scbctesting/``
+  - ``pip remove interactions``
+  - ``rm -rf /usr/local/lib/python2.7/site-packages/interactions/``
 
 -----
 
