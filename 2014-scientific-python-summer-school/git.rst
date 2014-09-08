@@ -195,7 +195,7 @@ Pro Git Boot, by Scott Chacon: http://git-scm.com/book
 Exercises (1/2)
 ================================================================================
 
-- Clone the repository: ``git://github.com/NelleV/SCBC-data.git``
+- Clone the repository: ``https://github.com/NelleV/SCBC-data.git``
 - Configure your git environment:
     - ``git config user.name "Your Name Comes Here"``
     - ``git config user.email you@yourdomain.example.com``
