@@ -1,0 +1,17 @@
+* plot_date
+* pcolor
+* fill
+* arrow
+* errorbar
+* pie
+* stem
+* step
+* semilogy + semilogx
+* loglog
+* axvspan + axhspan
+* specgram
+* cohere
+* phase spectrum
+* psd
+* pcolormesh
+

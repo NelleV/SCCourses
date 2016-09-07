@@ -3,6 +3,27 @@ An introduction to Git
 
 ----
 
+About me
+==========
+
+.. raw:: html
+
+   <span class="big">
+
+Nelle Varoquaux
+
+Departement of Statistics, UC Berkeley
+
+Berkeley Institute for Data Science
+
+http://cbio.ensmp.fr/~nvaroquaux/
+
+.. raw:: html
+
+   </span>
+
+----
+
 Why do I need version control ?
 ================================================================================
 
@@ -43,45 +64,6 @@ Version control system:
 - keeps all the historical versions for easy tracking.
 - benefits team collaboration.
 - improves our efficiency.
-- can be used as a data center, which makes build automation possible.
-
-
-
-----
-
-The Python community
-================================================================================
-
-.. raw:: html
-
-   <span class="vsmall">
-
-
-+-----------------------------------+----------------------------------------+
-| Github                            | Bitbucket                              |
-+===================================+========================================+
-| - Numpy                           | - PIL                                  |
-| - Scipy                           |                                        |
-| - IPython                         |                                        |
-| - matplotlib                      |                                        |
-| - Sympy                           |                                        |
-| - Scikit-learn                    |                                        |
-| - Scikit-image                    |                                        |
-| - Numba                           |                                        |
-| - Mayavi                          |                                        |
-| - Traits                          |                                        |
-| - Enable                          |                                        |
-| - Enamel                          |                                        |
-| - Pandas                          |                                        |
-| - biopython                       |                                        |
-| - Cython                          |                                        |
-| - statsmodel                      |                                        |
-| ..                                |                                        |
-+-----------------------------------+----------------------------------------+
-
-.. raw:: html
-
-   </span>
 
 ----
 
@@ -193,27 +175,10 @@ Pro Git Boot, by Scott Chacon: http://git-scm.com/book
 
 ----
 
-Exercises (1/2)
+Exercises
 ================================================================================
 
-- Clone the repository: ``https://github.com/NelleV/SCBC-data.git``
-- Configure your git environment:
-    - ``git config user.name "Your Name Comes Here"``
-    - ``git config user.email you@yourdomain.example.com``
-    - ``git config color.ui auto``
-- Check your configuration settings by using ``git config --list``
-
-------
-
-Exercises (2/2)
-====================================
-
-- Create a new file ``AUTHORS`` and add it.
-- Check what the status of your repository is, by using ``git status``.
-- Save the state of your repository with ``git commit``
-- Now edit the ``AUTHORS`` file, and check the status of the repository.
-- Add this file and commit it.
-- Type ``git log`` in the repository. What do you see?
+Exercises 01_configuring_and_committing.rst
 
 ----
 
@@ -239,28 +204,10 @@ Canceling operations
 
 -------
 
-Exercises (1 / 2)
-================================================================================
+Exercises
+==========
 
-- Rename the file ``AUTHORS`` to ``CONTRIBUTORS`` using ``git mv`` and commit 
-  your changes
-- Now delete this file and commit your changes.
-- Use ``git log`` to see the history of the repository.
-- Modify the ``TODO`` file, and add it to the staging area.
-- Remove this file from the staging area.
-- Create a python script called power.py
-- Add this to the staging area and commit it.
-
-------
-
-Exercises (2 / 2)
-=================
-
-- Now edit it again, and add the following function to the bottom of the file:
-    def square_root(x):
-        return np.sqrt(x)
-- Use git checkout to remove the changes you've made to this file. You can
-  check what you have done using ``git status``.
+Exercises 02_deleting_canceling.rst
 
 -------
 
@@ -362,13 +309,7 @@ Commands
 Exercises
 ================================================================================
 
-- Create a new branch ``development``, using ``git branch development``.
-- Switch to that branch.
-- Check in which branch you are using ``git branch``.
-- Create a python script that prints the first 10 integers, and commit it.
-- Look at the history of your repository.
-- Switch to the branch ``master``, and look again at the history. What do you
-  see?
+Exercises 03_branching.rst
 
 ----
 
@@ -429,10 +370,7 @@ When a conflict emerges, you must **manually** edit the files::
 Exercises
 ================================================================================
 
-- Try deleting branch ``development`` using ``git branch -d development``.
-  What do you see ?
-- Merge the changes of branch ``development`` in ``master``.
-- Try to delete the branch ``development`` once again.
+Exercises 04_merging.rst
 
 ----
 
@@ -479,20 +417,19 @@ Updating a repository
 Exercises
 ================================================================================
 
-- Create a github project.
-- Add the url of the project as a remote called ``my_repository``.
-- Push your changes to github:
-  ``git push my_repository master``
-- Check on github that you have indeed pushed your changes.
-- Fetch the changes from the remote ``origin``.
-- Merge the changes from ``origin/master`` to your local master branch (there
-  may be a conflict - if so, resolve it).
-- Push the new changes to your remote called ``my_repository``.
+Exercises 05_remotes.rst
 
 -----
 
-The Github workflow
+Github and the open source community
+=====================================
+
+----
+
+Exercises
 ====================
+
+Exercises 05_contributing.rst
 
 ----
 

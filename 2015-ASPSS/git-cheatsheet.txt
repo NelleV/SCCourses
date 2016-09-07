@@ -1,0 +1,61 @@
+Initializing a git repository
+------------------------------
+
+git init
+git clone <url>
+
+Configuration
+--------------
+
+git config --global <option>
+
+user.name "your name"
+user.email email@email.com
+core.editor a_sane_text_editor
+core.ui auto
+
+To check your configuration
+git config --list
+
+git config --local <option>
+git config --system <option>
+
+
+Taking a repository snapshot
+----------------------------
+git add <filename>
+git commit -m "A miningful commit message"
+git status
+git log
+
+Deleting files/canceling operations
+-----------------------------------
+git rm <filename>
+git mv <filename>  -> is equivalent to mv file1 file2; git rm file1; git add
+file2
+
+Don't forget to commit after removing or moving a file
+
+Branches
+---------
+
+git branch <branch_name>
+git checkout <branch_name>
+or
+git checkout -b <branch_name>
+
+Go into the branch you would like to merge in.
+git merge <branch_to_merge>
+
+Working with a remote history
+-----------------------------
+git remote add <remote_name> url
+git remote rm <remote_name>
+
+git fetch remote_name branch_name
+git merge <remote_name/branch_name>
+
+Create a bare remote repository
+--------------------------------
+git clone --bare <my_git_repo> <name.git>
+
